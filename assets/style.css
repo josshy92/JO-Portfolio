@@ -1,0 +1,250 @@
+* {
+    font-family: 'Arima Madurai', cursive;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    background-image: repeating-linear-gradient(to right, rgb(204, 207, 209),  rgb(255, 255, 255));
+  }
+  
+  header {
+    background-color: rgba(85, 161, 184, 0);
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 1px #d4d4d4;
+    
+  }
+  
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0); 
+    font-size: 16px;
+    margin-bottom: 1rem; 
+  }
+  
+  nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .aboutMe {
+    align-items: center;
+    text-align: center;
+  }
+  #myPic {
+    width: 10%;
+    height: auto;
+    border-radius: 1rem;
+    opacity: 90%;
+  }
+  #myPic:hover {
+    position:relative;
+    width:20%;
+    height:auto;
+    z-index:999;
+    transition-duration: 2s;
+}
+  .textCenter {
+    text-align: center;
+  }
+#blurb {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 1rem;
+
+}
+
+  #projects {
+    color: rgb(158, 173, 186);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+  }
+  
+  .resume {
+    text-decoration: none;
+    margin: 10rem;
+    color: rgb(0, 0, 0);
+    animation-name: turnColor;
+    animation-duration: 30s;
+    height: 50px;
+    animation-iteration-count: infinite;
+  }
+  
+  .resume:hover {
+    text-decoration: underline;
+  }
+  @keyframes turnColor {
+    0% {color: #000000;}
+    10% {color: #6d0b9b;}
+    20% {color: #9b0b47;}
+    30% {color: #b68603;}
+    40% {color: #18aa24;}
+    50% {color: #59CFEC;}
+    60% {color: #bd0fbd;}
+    75% {color: #bd0f0f;}
+    100% {color: #1607f5;}
+  }
+.moved{
+  padding-left: 1rem;
+}
+
+
+.fromLeft {
+  margin-left: 1rem;
+}
+#foodTemp {
+ width: 200px;
+ height: auto;
+ margin-bottom: 5rem;
+ opacity: 50%;
+ border-radius: 1rem;
+ margin-top: 1rem;
+ -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+
+#foodTemp:hover {
+  width: 600px;
+  opacity: 100%;
+  border-radius: 0%;
+  /* transform: rotatez(150deg); */
+  transition-duration: 3s;
+  margin-bottom: 5rem;
+  break-after:right;
+}
+
+div a {
+   cursor:url(https://img.icons8.com/office/40/000000/curly-arrow.png), auto;
+}
+
+.shorten1 {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+}
+.shorten2 {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 30px;
+}
+p {
+  font-size: 18px;
+}
+
+li {
+  font-size: 16px;
+  color: black;
+}
+
+#contact {
+  margin-top: 10rem;
+}
+
+#resume {
+  margin-top: 10rem;
+}
+
+#email {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+footer{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 18px;
+  text-shadow: 1px 1px #13293d;
+  color: gray;
+}
+
+@media screen and (max-width: 992px) {
+  
+  div,
+  p,
+  section,
+  h1 {
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+  #contact{
+    display: block;
+  }
+}
+
+/* Large smartphones*/
+@media screen and (max-width: 768px) {
+  main,
+  header,
+  nav {
+    flex-direction: column;
+  }
+  
+  h1,
+  h2,
+  h3,
+  footer {
+        font-size: 20px;
+
+    }
+    .center {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 80%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      p {
+          font-size: 14px;
+      }
+      .myPic {
+        width: 50%;
+      }
+    }
+
+    
+   
+
+    
+    /* Small smartphones */
+    @media screen and (max-width: 576px)  {
+    div,
+    p,
+    section,
+    h1 {
+      display: contents;
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+    #contact{
+      display: block;
+    }
+  }
