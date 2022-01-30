@@ -8,7 +8,7 @@
   }
   
   body {
-    background-image: repeating-linear-gradient(to right, rgb(204, 207, 209),  rgb(255, 255, 255));
+    background-image: repeating-linear-gradient(to right,rgb(238, 192, 217), rgb(247, 247, 247),  rgb(238, 192, 217));
   }
   
   header {
@@ -64,7 +64,7 @@
 }
 
   #projects {
-    color: rgb(158, 173, 186);
+    color: rgb(238, 192, 217);
     font-size: 3rem;
     margin-bottom: 3rem;
     text-shadow: rgb(0, 0, 0) 2px 2px;
